@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>经典文萃 - 静心阅读</title>
+    <style>
+        /* 基础样式 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            color: #333;
+        }
+
+        /* 背景图片设置 - 这里使用了精美的山水大图 */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            background-size: cover;
+            z-index: -1;
+            filter: brightness(0.8);
+        }
+
+        /* 容器样式 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 5px;
+        }
+
+        /* 文章卡片样式 */
+        .article-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .article-author {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .article-content {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            text-align: justify;
+            white-space: pre-wrap; /* 保留换行 */
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 600px) {
+            .article-card { padding: 20px; }
+            header h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="container">
+        <header>
+            <h1>经典文萃</h1>
+            <p>—— 感受文字的力量 ——</p>
+        </header>
+
+        <article class="article-card">
+            <div class="article-title">匆匆</div>
+            <div class="article-author">朱自清</div>
+            <div class="article-content">
+燕子去了，有再来的时候；杨柳枯了，有再青的时候；桃花谢了，有再开的时候。但是，聪明的，你告诉我，我们的日子为什么一去不复返呢？——是有人偷了他们罢：那是谁？又藏在何处呢？是他们自己逃走了罢：现在又到了哪里呢？
+
+我不知道他们给了我多少日子；但我的手确乎是渐渐空虚了。在默默里算着，八千多日子已经从我手中溜去；像针尖上一滴水滴在大海里，我的日子滴在时间的流里，没有声音，也没有影子。我不禁头涔涔而泪潸潸了。
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-title">小王子（节选）</div>
+            <div class="article-author">安东尼·德·圣-埃克苏佩里</div>
+            <div class="article-content">
+“对我来说，你还只是一个小男孩，就像其他千万个小男孩一样。我不需要你。你也同样不需要我。对你来说，我也不过是一只狐狸，和其他千万只狐狸一样。但是，如果你驯服了我，我们就互相不可缺少了。对我来说，你就是世界上唯一的了；我对你来说，也是世界上唯一的了。”
+
+“我的生活很单调。我捕捉鸡，人捕捉我。所有的鸡都一样，所有的人也一样。因此，我感到有些厌烦。但是，如果你驯服了我，我的生活就一定会变得好像有阳光照耀。我将辨别出一种与众不同的脚步声。”
+            </div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-title">热爱生命</div>
+            <div class="article-author">汪国真</div>
+            <div class="article-content">
+我不去想是否能够成功，既然选择了远方，便只顾风雨兼程。
+我不去想能否赢得爱情，既然钟情于玫瑰，就勇敢地吐露真诚。
+我不去想身后会不会袭来寒风冷雨，既然目标是地平线，留给世界的只能是背影。
+我不去想未来是平坦还是泥泞，只要热爱生命，一切，都在意料之中。
+            </div>
+        </article>
+
+        <footer>
+            <p>© 2026 经典阅读 · 宁静致远</p>
+        </footer>
+    </div>
+
+</body>
+</html>
